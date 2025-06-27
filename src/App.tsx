@@ -24,6 +24,14 @@ import {
   ArrowRight
 } from 'lucide-react';
 
+// Import des images
+import logoImg from '../assets/images/logo_img.jpg';
+import image1 from '../assets/images/image1.jpg';
+import image2 from '../assets/images/image2.jpg';
+import image3 from '../assets/images/image3.jpg';
+import image4 from '../assets/images/image4.jpg';
+import image5 from '../assets/images/image5.jpg';
+
 function App() {
   const [formData, setFormData] = useState({
     nom: '',
@@ -139,25 +147,25 @@ function App() {
 
   const preuves = [
     {
-      image: "/assets/images/image1.jpg",
+      image: image1,
       title: "Bureau Moderne",
       description: "Nettoyage complet d'un espace de 500m² en 4h",
       type: "Bureaux"
     },
     {
-      image: "/assets/images/image2.jpg",
+      image: image2,
       title: "Villa Résidentielle",
       description: "Service hebdomadaire pour une famille de 6 personnes",
       type: "Résidentiel"
     },
     {
-      image: "/assets/images/image3.jpg",
+      image: image3,
       title: "Chantier Commercial",
       description: "Remise en état après construction d'un centre commercial",
       type: "Fin de chantier"
     },
     {
-      image: "/assets/images/image4.jpg",
+      image: image4,
       title: "Hôtel 4 étoiles",
       description: "Contrat annuel de nettoyage quotidien - 150 chambres",
       type: "Hôtellerie"
@@ -172,7 +180,7 @@ function App() {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg shadow-yellow-500/25 overflow-hidden">
-                <img src="/assets/images/logo_img.jpg" alt="Dos Services Logo" className="w-full h-full object-cover" />
+                <img src={logoImg} alt="Dos Services Logo" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
@@ -230,7 +238,7 @@ function App() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-yellow-500/20 h-96">
                 <img 
-                  src="/assets/images/image5.jpg" 
+                  src={image5} 
                   alt="Équipe de nettoyage professionnelle"
                   className="w-full h-full object-cover"
                 />
@@ -294,7 +302,7 @@ function App() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl shadow-cyan-500/20">
                 <img 
-                  src="/assets/images/image2.jpg"
+                  src={image2}
                   alt="Équipe de nettoyage professionnelle"
                   className="w-full h-auto"
                 />
