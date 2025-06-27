@@ -70,12 +70,12 @@ const Preuves: React.FC = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <button className="inline-flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-all duration-300">
             <span>Voir plus de réalisations</span>
             <ArrowRight className="w-4 h-4" />
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
