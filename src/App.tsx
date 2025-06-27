@@ -139,25 +139,25 @@ function App() {
 
   const preuves = [
     {
-      image: "https://images.pexels.com/photos/6195122/pexels-photo-6195122.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/assets/images/image1.jpg",
       title: "Bureau Moderne",
       description: "Nettoyage complet d'un espace de 500m² en 4h",
       type: "Bureaux"
     },
     {
-      image: "https://images.pexels.com/photos/5025639/pexels-photo-5025639.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/assets/images/image2.jpg",
       title: "Villa Résidentielle",
       description: "Service hebdomadaire pour une famille de 6 personnes",
       type: "Résidentiel"
     },
     {
-      image: "https://images.pexels.com/photos/6197119/pexels-photo-6197119.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/assets/images/image3.jpg",
       title: "Chantier Commercial",
       description: "Remise en état après construction d'un centre commercial",
       type: "Fin de chantier"
     },
     {
-      image: "https://images.pexels.com/photos/5025641/pexels-photo-5025641.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/assets/images/image4.jpg",
       title: "Hôtel 4 étoiles",
       description: "Contrat annuel de nettoyage quotidien - 150 chambres",
       type: "Hôtellerie"
@@ -171,8 +171,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-xl flex items-center justify-center shadow-lg shadow-yellow-500/25">
-                <Sparkles className="w-7 h-7 text-gray-900" />
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg shadow-yellow-500/25 overflow-hidden">
+                <img src="/assets/images/logo_img.jpg" alt="Dos Services Logo" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
@@ -228,11 +228,11 @@ function App() {
               </div>
             </div>
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-yellow-500/20">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-yellow-500/20 h-96">
                 <img 
-                  src="https://images.pexels.com/photos/6195122/pexels-photo-6195122.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  src="/assets/images/image5.jpg" 
                   alt="Équipe de nettoyage professionnelle"
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
               </div>
@@ -251,7 +251,7 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 lg:py-24 bg-gray-800/50">
+      <section id="services" className="py-16 lg:py-24 bg-gray-800/50 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
@@ -294,7 +294,7 @@ function App() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl shadow-cyan-500/20">
                 <img 
-                  src="https://images.pexels.com/photos/5025639/pexels-photo-5025639.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="/assets/images/image2.jpg"
                   alt="Équipe de nettoyage professionnelle"
                   className="w-full h-auto"
                 />
@@ -365,7 +365,7 @@ function App() {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact" className="py-16 lg:py-24 bg-gray-900">
+      <section id="contact" className="py-16 lg:py-24 bg-gray-900 scroll-mt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
